@@ -1,10 +1,10 @@
-# SPX500 3m OHLCV Stock index Historical Data — Free Sample
+# SPX500 3m OHLCV Index Historical Data — Free Sample
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-2_025_780_rows-blue)](https://getdata.finance/datasets/spx500) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/spx500)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Dataset rows](https://img.shields.io/badge/full_dataset-2_035_966_rows-blue)](https://getdata.finance/datasets/spx500) [![Updated](https://img.shields.io/badge/weekly_update-every_Saturday_8am_UTC-green)](https://getdata.finance) [![Full data on getdata.finance](https://img.shields.io/badge/download-getdata.finance-orange)](https://getdata.finance/datasets/spx500)
 
 ### -> [**Download the full SPX500 dataset on getdata.finance**](https://getdata.finance/datasets/spx500)
 
-**SPX500 3m OHLCV stock index historical data** — ultra high-quality 3m OHLCV for **S&P 500**. Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only. Clean `datetime, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
+**SPX500 3m OHLCV index historical data** — ultra high-quality 3m OHLCV for **S&P 500**. Clean `time, open, high, low, close, volume` CSV for backtesting, algorithmic trading and quantitative research.
 
 ## Table of contents
 
@@ -21,14 +21,13 @@
 
 ## Why this dataset?
 
-- **Ultra high-quality 3m OHLCV** for **S&P 500** (Stock index)
-- **Global cash and extended index sessions — Asia, Europe and US coverage, not US-hours only**
-- **Clean CSV schema** — `datetime, open, high, low, close, volume` (no gaps in formatting)
-- **Free evaluation sample** on GitHub (`3m`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/spx500) · **2,025,780** `1m` rows in the full archive
+- **Ultra high-quality 3m OHLCV** for **S&P 500** (Index)
+- **Clean CSV schema** — `time, open, high, low, close, volume` (no gaps in formatting)
+- **Free evaluation sample** on GitHub (`3m`) · **11 timeframes** on [getdata.finance](https://getdata.finance/datasets/spx500) · **2,035,966** `3m` rows in the full archive
 - Built for **backtesting**, **algorithmic trading** and **quantitative finance** workflows
 - **Weekly refresh** — [getdata.finance](https://getdata.finance) every **Saturday, 8am UTC+0**; GitHub `3m` sample updated in sync
 
-> **Sample on GitHub** · `SPX500_3m.csv` (59,222 rows, `2026-02-02` -> `2026-07-31`). **Full archive on [getdata.finance](https://getdata.finance/datasets/spx500)** — **2,025,780** `1m` rows (~134.80 MB), **11 timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W), `2008-08-19` -> `2026-07-31`.
+> **Sample on GitHub** · `SPX500_3m.csv` (18,481 rows, `2026-07-07` -> `2026-09-02`, 1.24 MB). **Full archive on [getdata.finance](https://getdata.finance/datasets/spx500)** — **2,035,966** `3m` rows (full `1m`: 5,964,774), **11 timeframes**, `2008-08-19` -> `2026-09-02`.
 
 ## Download sample
 
@@ -44,11 +43,11 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 | | **Sample (this repo)** | **Full dataset ([getdata.finance](https://getdata.finance/datasets/spx500))** |
 |---|--:|---|
-| Instrument | S&P 500 · Stock index | S&P 500 · Stock index |
+| Instrument | S&P 500 · Index | S&P 500 · Index |
 | Timeframes | `3m` (sample) | **11** — 1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W |
-| 1m rows | 59,222 | **2,025,780** |
-| Size | 4.07 MB | ~134.80 MB |
-| Period | `2026-02-02` -> `2026-07-31` | `2008-08-19` -> `2026-07-31` |
+| 3m rows | 18,481 | **2,035,966** |
+| Size | 1.24 MB | full ZIP on [getdata.finance](https://getdata.finance/datasets/spx500) |
+| Period | `2026-07-07` -> `2026-09-02` | `2008-08-19` -> `2026-09-02` |
 | File | `SPX500_3m.csv` | ZIP on [getdata.finance](https://getdata.finance/datasets/spx500) |
 | Coverage report | — | [SPX500 coverage](https://getdata.finance/coverage/spx500) |
 | Updates | Weekly (Saturday, 8am UTC+0) — GitHub sample | Weekly (Saturday, 8am UTC+0) — all timeframes |
@@ -57,7 +56,7 @@ Full archive & live chart on getdata.finance: **[https://getdata.finance/dataset
 
 This GitHub repository ships a **`3m` evaluation sample** only. On **[getdata.finance](https://getdata.finance/datasets/spx500)**, each full asset archive is delivered as a ZIP with **11 gap-free OHLCV timeframes** (one CSV per timeframe):
 
-**1m** · **3m** · **5m** · **15m** · **30m** · **1H** · **4H** · **12H** · **1D** · **3D** · **1W**
+**1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W**
 
 GitHub = `3m` sample · [getdata.finance](https://getdata.finance/datasets/spx500) = all **11** timeframes above for the same instrument.
 
@@ -74,29 +73,29 @@ First and latest rows from the GitHub sample **`SPX500_3m.csv`**:
 
 **First rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-02-02T05:54:00+00:00 | 6856.99 | 6858.74 | 6856.23 | 6856.37 | 852 |
-| 2026-02-02T05:57:00+00:00 | 6856.37 | 6859.73 | 6854.86 | 6858 | 887 |
-| 2026-02-02T06:00:00+00:00 | 6858 | 6862.49 | 6856.48 | 6858.23 | 973 |
-| 2026-02-02T06:03:00+00:00 | 6858.23 | 6859.25 | 6855.23 | 6855.87 | 790 |
-| 2026-02-02T06:06:00+00:00 | 6855.87 | 6856.75 | 6853.73 | 6854.23 | 815 |
+| 2026-07-07T19:00:00+00:00 | 7498.3 | 7500.32 | 7491.55 | 7495.32 | 3138 |
+| 2026-07-07T19:03:00+00:00 | 7495.32 | 7496.8 | 7492.05 | 7495.82 | 2404 |
+| 2026-07-07T19:06:00+00:00 | 7495.82 | 7498.82 | 7491.05 | 7491.31 | 2281 |
+| 2026-07-07T19:09:00+00:00 | 7491.31 | 7491.82 | 7488.3 | 7489.56 | 1927 |
+| 2026-07-07T19:12:00+00:00 | 7489.56 | 7493.07 | 7488.55 | 7490.8 | 1948 |
 
 **Last rows**
 
-| datetime | open | high | low | close | volume |
+| time | open | high | low | close | volume |
 | --- | --- | --- | --- | --- | --- |
-| 2026-07-31T20:30:00+00:00 | 7483.77 | 7484.27 | 7481.77 | 7483.03 | 339 |
-| 2026-07-31T20:33:00+00:00 | 7483.03 | 7485.27 | 7482.78 | 7484.28 | 221 |
-| 2026-07-31T20:36:00+00:00 | 7484.28 | 7485.28 | 7483.76 | 7485.02 | 204 |
-| 2026-07-31T20:39:00+00:00 | 7485.02 | 7485.52 | 7484.26 | 7485.27 | 161 |
-| 2026-07-31T20:42:00+00:00 | 7485.27 | 7485.78 | 7483.01 | 7483.37 | 285 |
+| 2026-09-02T01:48:00+00:00 | 7628.84 | 7629.1 | 7625.83 | 7626.34 | 248 |
+| 2026-09-02T01:51:00+00:00 | 7626.34 | 7627.1 | 7625.34 | 7625.83 | 370 |
+| 2026-09-02T01:54:00+00:00 | 7625.83 | 7629.08 | 7625.83 | 7627.83 | 432 |
+| 2026-09-02T01:57:00+00:00 | 7627.83 | 7629.85 | 7627.34 | 7629.58 | 299 |
+| 2026-09-02T02:00:00+00:00 | 7629.58 | 7629.85 | 7629.58 | 7629.85 | 29 |
 
 ## Schema
 
 | Column | Description |
 | --- | --- |
-| `datetime` | Bar open timestamp (UTC, ISO-8601). |
+| `time` | Bar open timestamp (UTC, ISO-8601). |
 | `open` | Opening price of the candlestick bar. |
 | `high` | Highest price during the bar. |
 | `low` | Lowest price during the bar. |
@@ -104,7 +103,7 @@ First and latest rows from the GitHub sample **`SPX500_3m.csv`**:
 | `volume` | Tick volume (number of price updates) during the bar. |
 
 ```text
-datetime,open,high,low,close,volume
+time,open,high,low,close,volume
 ```
 
 ## Code examples
@@ -114,11 +113,9 @@ datetime,open,high,low,close,volume
 ```python
 import pandas as pd
 
-df = pd.read_csv('SPX500_3m.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('SPX500_3m.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 print(df.describe())
-print(df.resample('1h').agg({'open': 'first', 'high': 'max',
-                              'low': 'min', 'close': 'last', 'volume': 'sum'}).head())
 ```
 
 ### backtrader
@@ -127,8 +124,8 @@ print(df.resample('1h').agg({'open': 'first', 'high': 'max',
 import backtrader as bt
 import pandas as pd
 
-df = pd.read_csv('SPX500_3m.csv', parse_dates=['datetime'])
-df.set_index('datetime', inplace=True)
+df = pd.read_csv('SPX500_3m.csv', parse_dates=['time'])
+df.set_index('time', inplace=True)
 
 class PandasData(bt.feeds.PandasData):
     params = (('datetime', None), ('open', 'open'), ('high', 'high'),
@@ -146,20 +143,20 @@ cerebro.adddata(PandasData(dataname=df))
 import pandas as pd
 import vectorbt as vbt
 
-df = pd.read_csv('SPX500_3m.csv', parse_dates=['datetime'])
-close = df.set_index('datetime')['close']
+df = pd.read_csv('SPX500_3m.csv', parse_dates=['time'])
+close = df.set_index('time')['close']
 fast, slow = vbt.MA.run(close, 10), vbt.MA.run(close, 50)
 entries = fast.ma_crossed_above(slow)
 exits = fast.ma_crossed_below(slow)
-pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='1min')
+pf = vbt.Portfolio.from_signals(close, entries, exits, init_cash=10_000, freq='3min')
 print(pf.stats())
 ```
 
 ## Download full data
 
-The complete **SPX500** archive on **[getdata.finance](https://getdata.finance/datasets/spx500)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **2,025,780** rows at `1m`, plus all other timeframes in the same ZIP.
+The complete **SPX500** archive on **[getdata.finance](https://getdata.finance/datasets/spx500)** includes **11 OHLCV timeframes** (1m · 3m · 5m · 15m · 30m · 1H · 4H · 12H · 1D · 3D · 1W) — **2,035,966** rows at `3m`, plus all other timeframes in the same ZIP.
 
 **[-> Get the full SPX500 dataset on getdata.finance](https://getdata.finance/datasets/spx500)**
 
 ---
-*GetData · SPX500 3m OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/spx500) · 2026-08-04 UTC*
+*GetData · SPX500 3m OHLCV sample on GitHub · Full historical data on [getdata.finance](https://getdata.finance/datasets/spx500)*
